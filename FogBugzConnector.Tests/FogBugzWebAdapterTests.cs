@@ -15,5 +15,8 @@ namespace FogBugzConnector.Tests
             var webAdapter = (IFogBugzWebAdapter) new FogBugzWebAdapter();
             Assert.AreEqual(new Uri("https://mycorp.fogbugz.com/api.asp?"),webAdapter.EndpointForBaseUri(baseUri));
         }
+
+        // TODO: Endpoint Discovery Failure
+        // TODO: Verify wrong version exception
     }
 }
